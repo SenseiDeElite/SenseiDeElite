@@ -9,8 +9,6 @@
 
 #### Platform & Tools
 [![](https://img.shields.io/badge/Arch%20Linux-33aadd?style=for-the-badge&logo=arch-linux&logoColor=ffffff)](https://www.archlinux.org/)
-[![](https://img.shields.io/badge/-Chromium-4285F4?style=for-the-badge&logo=googlechrome&logoColor=ffffff)](https://www.chromium.org/)
-[![](https://img.shields.io/badge/-Firefox-FF7139?style=for-the-badge&logo=firefox-browser&logoColor=ffffff)](https://www.mozilla.org/firefox/)
 [![](https://img.shields.io/badge/-Git-f05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=ffffff)](https://www.docker.com/)
 [![](https://img.shields.io/badge/-Caddy-00ADD8?style=for-the-badge&logo=caddy&logoColor=ffffff)](https://caddyserver.com/)
