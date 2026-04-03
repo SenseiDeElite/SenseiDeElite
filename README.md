@@ -17,5 +17,5 @@
 ---
 
 <div align="center">
-  <img src="https://count.getloli.com/get/@SenseiDeElite?theme=original-new" alt="visitor count" />
+  <img src="https://count.getloli.com/get/@SenseiDeElite?theme=booru-lewd" alt="visitor count" />
 </div>
