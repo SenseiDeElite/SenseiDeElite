@@ -1,4 +1,4 @@
-<h2><img src="https://raw.githubusercontent.com/SenseiDeElite/SenseiDeElite/master/sensei.svg" /></h2>
+<h2><img src="https://raw.githubusercontent.com/SenseiDeElite/SenseiDeElite/master/icons/sensei.svg" /></h2>
 
 ### Languages
 [![](https://img.shields.io/badge/-Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=ffffff)](https://www.lua.org/)
