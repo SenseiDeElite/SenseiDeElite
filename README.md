@@ -12,7 +12,6 @@
 
 ### Mobile
 [![](https://img.shields.io/badge/-GrapheneOS-000000?style=for-the-badge&logo=grapheneos&logoColor=ffffff)](https://grapheneos.org/)
-[![](https://img.shields.io/badge/-LineageOS-167C80?style=for-the-badge&logo=lineageos&logoColor=ffffff)](https://lineageos.org/)
 
 ---
 
