@@ -2,6 +2,7 @@
 
 ### Languages
 [![](https://img.shields.io/badge/%20-Lua-D0D0F1?style=for-the-badge&logo=lua&logoColor=ffffff&labelColor=000066)](https://www.lua.org/)
+[![](https://img.shields.io/badge/%20-Python-D0DCF1?style=for-the-badge&logo=python&logoColor=ffffff&labelColor=1E4670)](https://www.python.org/)
 [![](https://img.shields.io/badge/%20-Rust-F3D8CE?style=for-the-badge&logo=rust&logoColor=ffffff&labelColor=702000)](https://rust-lang.org/)
 [![](https://img.shields.io/badge/%20-JavaScript-F3E0CE?style=for-the-badge&logo=javascript&logoColor=ffffff&labelColor=703700)](https://ecma-international.org/publications-and-standards/standards/ecma-262/)
 [![](https://img.shields.io/badge/%20-CSS3-E0D3EE?style=for-the-badge&logo=css&logoColor=ffffff&labelColor=38115F)](https://www.w3.org/TR/css/)
