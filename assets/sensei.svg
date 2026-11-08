@@ -1,28 +1,75 @@
-<svg fill="none" viewBox="0 0 520 60" width="520" height="60" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 520 60" width="520" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sensei">
+  <title>Sensei</title>
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
+      <style><![CDATA[
+        /* Obsidian theme tokens */
+        @property --charge { syntax: "<number>"; inherits: true; initial-value: 0; }
+
+        .title {
+          color-scheme: dark light;
+
+          --brand: #612ccc;
+          --font: system-ui, -apple-system, "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+
+          --accent: light-dark(var(--brand), oklch(from var(--brand) .80 .108 h));
+          --lit:    oklch(from var(--brand) .72 .157 h);
+          --lit-hi: oklch(from var(--lit) calc(l + .07) calc(c * .85) h);
+          --glow:   light-dark(oklch(from var(--lit) l c h / .50), oklch(from var(--lit) l c h / .58));
+
+          --ease-effects: cubic-bezier(.2, 0, 0, 1);
+          --ease-nav:     cubic-bezier(.3, .02, .12, 1);
+          --spring-pop:   linear(0, 0.021, 0.078, 0.16, 0.259, 0.367, 0.478, 0.587, 0.691, 0.785, 0.868, 0.939, 0.997, 1.044, 1.079, 1.103, 1.118, 1.125, 1.126, 1.121, 1.113, 1.101, 1.088, 1.074, 1.06, 1.047, 1.034, 1.023, 1.013, 1.004, 0.998, 0.992, 0.989, 0.986, 1);
+
+          margin: 0;
+          padding: 4px 0;
+          display: inline-block;
+          white-space: nowrap;
+          transform-origin: 0 50%;
+
+          font: 800 40px/44px var(--font);
+          letter-spacing: -.04em;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+
+          color: transparent;
+          background-image: linear-gradient(
+            220deg,
+            var(--accent), var(--lit-hi), var(--lit), var(--brand), var(--accent)
+          );
+          background-size: 300% 300%;
+          -webkit-background-clip: text;
+          background-clip: text;
+
+          filter: drop-shadow(0 0 calc(var(--charge) * 14px) var(--glow));
+
+          animation:
+            title-pop     .9s var(--spring-pop) both,
+            title-charge  1s  var(--ease-effects) .15s both,
+            gradient-shift 6s var(--ease-nav) 1s infinite;
+        }
+
         @keyframes gradient-shift {
           0%   { background-position: 0% 50% }
           50%  { background-position: 100% 50% }
           100% { background-position: 0% 50% }
         }
-        .title {
-          font-family: sans-serif;
-          font-size: 40px;
-          font-weight: 700;
-          color: transparent;
-          background-image: linear-gradient(220deg, #00d4ff, #2255cc, #0d2456, #00d4ff);
-          background-size: 300% 300%;
-          background-clip: text;
-          animation: gradient-shift 6s ease infinite;
-          white-space: nowrap;
-          display: inline-block;
-          margin: 0;
-          padding: 4px 0;
-          line-height: 1.2;
+        @keyframes title-pop {
+          from { scale: .82; opacity: 0; }
+          to   { scale: 1;   opacity: 1; }
         }
-      </style>
+        @keyframes title-charge {
+          from { --charge: 0; }
+          to   { --charge: 1; }
+        }
+
+        @media (prefers-contrast: more) {
+          .title { --accent: light-dark(oklch(from var(--brand) .40 c h), oklch(from var(--brand) .86 .08 h)); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .title { animation-duration: .01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; --charge: 1; }
+        }
+]]></style>
       <p class="title">Sensei</p>
     </div>
   </foreignObject>
