@@ -15,6 +15,7 @@
           --accent: light-dark(var(--brand), oklch(from var(--brand) .80 .108 h));
           --lit:    oklch(from var(--brand) .72 .157 h);
           --lit-hi: oklch(from var(--lit) calc(l + .07) calc(c * .85) h);
+
           --sweep-a: light-dark(oklch(from var(--brand) .60 .19 h), var(--lit-hi));
           --sweep-b: light-dark(var(--brand), oklch(from var(--brand) .58 .20 h));
           --glow:   light-dark(oklch(from var(--lit) l c h / .50), oklch(from var(--lit) l c h / .58));
@@ -35,6 +36,7 @@
           text-rendering: optimizeLegibility;
 
           color: transparent;
+
           background-image: linear-gradient(
             110deg,
             var(--sweep-a) 0%, var(--sweep-b) 50%, var(--sweep-a) 100%
@@ -54,7 +56,7 @@
 
         @keyframes gradient-sweep {
           from { background-position: 0% 0; }
-          to   { background-position: 200% 0; }
+          to   { background-position: 200% 0; } 
         }
         @keyframes title-pop {
           from { scale: .82; opacity: 0; }
